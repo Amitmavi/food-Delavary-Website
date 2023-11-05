@@ -1,0 +1,343 @@
+/* CSS Reset*/
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables*/
+:root{
+    --navbar-height: 59px;
+}
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+   
+}
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+/* Navigation Bar : Logo and image */
+#logo{
+    margin: 5px 5px;
+}
+#logo img{
+   margin:5px 10px;
+   height: 50px;
+   width: 50px;
+   border-radius: 90%;
+   border: 3px solid rgb(23, 117, 141);
+}
+/* navigation Bar List styling*/
+
+ #navbar ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+#navbar ul li{
+    list-style: none;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 5px 35px;
+    font-size: 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: rgb(21, 145, 147);
+}
+/*Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 4px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 430px;
+   
+}
+#home::before{
+    content: "";
+    background-image: url('../img/background.jpg');
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.89;
+    background-size: cover; 
+    height: 90%;
+    width: 100%
+}
+   #home h1{
+    color: white;
+    text-align: center;
+   }
+   #home{
+    padding: 70px;
+   }
+   #home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family:serif;
+   }
+  
+
+
+
+    button.btn{
+    display: inline-block;
+    border-radius: 4rem;
+    background-color:#0ef ;
+    font-size: 1.7rem;
+    color: #1f242d;
+    letter-spacing: .1rem;
+    font-weight: 700;
+    transition: .5s ease;
+}
+button.btn:hover{
+    box-shadow: 0 0 1rem #0ef;
+}
+/* services section */
+#services{
+    margin: 34px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 35px;
+    margin: 3px 6px;
+    border-radius: 25px;
+    background: #f2f2f2;
+    flex: 1 1 20rem;
+    
+}
+#services .box img{
+    height: 100px;
+    display: block;
+    margin: auto;
+}
+#services .box p{
+   font-family:Georgia, 'Times New Roman', Times, serif
+}
+/* our special*/
+#special{
+    margin: 10px;
+    display: flex;
+}
+#special p{
+    text-align: center;
+}
+#special .a1{
+    padding: 20px;
+    margin: 3px 5px;
+}
+#special .a1 img {
+    height: 157px;
+    display: block;
+    margin: auto;
+    border-radius: 20px;  
+}
+.a-primary{
+    font-size: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.a-secondary{
+    text-align: center;
+     font-size: 30px;
+}
+#special{
+    display: flex;
+    flex-wrap: wrap;
+}
+.button{
+    margin: 12px 90px;
+    border-radius: 4px;
+    font-size: 16px;
+    border: 3px solid black;
+    background-color: aqua;
+}
+.button:hover{
+    background-color: rgb(63, 151, 151);
+    color: black;
+}
+
+/* branch*/
+#branches{
+    display: flex;
+    margin: 40px;
+    flex-wrap: wrap;
+}
+#branches .c1 img{
+    height: 400px;
+    display: block;
+    flex-wrap: wrap;
+    margin: auto;
+    border-radius: 10px;
+}
+#branches .c1{
+    padding: 20px 70px;
+    margin: 3px 4px;
+}
+.m-primary{
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.c-secondary{
+    text-align: center;
+    font-size: 30px;
+}
+
+/* client section */
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url("../img/vegetables.jpg");
+    width: 100%;
+    height: 50%;
+    z-index: -1;
+    opacity: 0.90;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#clints{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#clints img{
+    height: 110px;
+}
+.clint-item{
+    padding: 45px;
+} 
+ Contact Section
+#contact{
+    position: relative;
+}      
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.98;
+    background: url("../img/contect.jpg") center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 15px;
+}
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    resize: none;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: serif;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 8px 20px;
+}
+
+
+/* utility classes*/
+.h-primary{
+    font-size: 3.8rem;
+    padding: 10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.h-secondary {
+    font-size: 2.1rem;
+    padding: 10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+    
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 20px;
+    font-size: 1.5rem;
+    border-radius: 11px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+/* fotter*/
+
+.fotter{
+    display: flex;
+    padding: 20px;
+    color: #f2f2f2;
+    background-color: #222f3d;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.fotter ul{
+    list-style: none;
+    margin: 9px 1px;
+}
+.fotter ul li{
+    margin: 9px 1px;
+}
+.fotter >div{
+    width: 150px;
+}
+.fotter .center{
+    color: rgb(200, 200, 200);
+}
+.icon{
+    color: white;
+    height: 30px;
+}
+.fotter p{
+    font-weight: 990;
+}
+
+.fotter-first ul{
+    width: 500px;
+   
+}
+.fotter-first i{
+    margin-right: 15px;
+}
+.fa-brands{
+    margin-top: 15px;
+}
+
+
+
+
+
